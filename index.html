@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Restoran Oljača |Jedinstven ukus i kvalitet</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body onload="startTime()">
+   
+   
+<!-- header section starts     -->
+
+<section class="header">
+
+   <a href="#" class="logo"> <i class="fas fa-utensils"></i>Restoran Oljača </a>
+
+   <nav class="navbar">
+      <a href="#home">Početna</a>
+      <a href="#about">O nama</a>
+      <a href="#food">Hrana</a>
+      <a href="#gallery">Galerija</a>
+      <a href="#menu">Meni</a>
+      <a href="#order">Naruči Online</a>
+      <a href="#blogs">Blog</a>  
+   </nav>
+
+   <div id="menu-btn" class="fas fa-bars"></div>
+   <div id="clock"></div>
+</section>
+
+<!-- header section ends    -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+   <div class="swiper home-slider">
+
+      <div class="swiper-wrapper">
+
+         <div class="swiper-slide slide" style="background: url(slike/restoran.jpg) no-repeat;">
+            <div class="content">
+               <h3>Izvanredan ambijent</h3>
+               <a href="#about" class="btn">O nama</a>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide" style="background: url(slike/restoran2.jpg) no-repeat;">
+            <div class="content">
+               <h3>Otvorena terasa</h3>
+               <a href="#about" class="btn">O nama</a>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide" style="background: url(slike/restoran3.jpg) no-repeat;">
+            <div class="content">
+               <h3>Autentična kuhinja</h3>
+               <a href="#about" class="btn">O nama</a>
+            </div>
+         </div>
+
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+   </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+   <div class="image">
+      <img src="slike/onama-img-0.png" alt="">
+   </div>
+
+   <div class="content">
+      <h3 class="title">Dobrodošli na zvanični sajt Restorana Oljača</h3>
+      <p class="onama-tekst">Restoran "Oljača"je porodični restoran koji je za kratko vreme uspeo da osvoji goste svojom originalnošću i šarmom.
+         Pred vama će se nizati slike i mešati ukusi prošlosti i budućnosti, tradicije i avangarde. Zapitaćete se da niste možda
+      zalutali u muzej, a kada vam se oko privikne na čudesan svet u kom ste se zatekli a osmeh uporno ostajao na licu,
+      setićete se zašto ste odabrali baš tu da jedete. Došli ste u jednu veliku porodicu koja voli to što radi.</p>
+      <!-- <a href="#" class="btn">read more</a> -->
+      <div class="icons-container">
+         <div class="icons">
+            <img src="slike/onama-icon-1.png" alt="">
+            <h3>Kvalitetna hrana</h3>
+         </div>
+         <div class="icons">
+            <img src="slike/onama-icon-2.png" alt="">
+            <h3>Odlična osveženja</h3>
+         </div>
+         <div class="icons">
+            <img src="slike/onama-icon-3.png" alt="">
+            <h3>Profesionalni kuvari</h3>
+         </div>
+      </div>
+   </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- food section starts  -->
+
+<section class="food" id="food">
+
+   <div class="heading">  
+      <span>Najpopularnija jela</span>
+      <h3>Egzotična hrana</h3>
+   </div>
+
+   <div class="swiper food-slider">
+
+      <div class="swiper-wrapper">
+
+
+         <div class="swiper-slide slide" data-name="food-1">
+            <img src="slike/hrana-img-2.png" alt="">
+            <h3>Domaćinski doručak</h3>
+            <div class="price">470</div>
+         </div>
+
+         <div class="swiper-slide slide" data-name="food-2">
+            <img src="slike/hrana-img-3.png" alt="">
+            <h3>Hrskava piletina</h3>
+            <div class="price">845</div>
+         </div>
+
+
+         <div class="swiper-slide slide" data-name="food-3">
+            <img src="slike/hrana-img-5.png" alt="">
+            <h3>Biftek na grilu </h3>
+            <div class="price">1500</div>
+         </div>
+
+      </div>
+
+      <div class="swiper-pagination"></div>
+
+   </div>
+
+</section>
+
+<!-- food section ends -->
+
+<!-- food preview section starts  -->
+
+<section class="food-preview-container">
+
+   <div id="close-preview" class="fas fa-times"></div>
+
+   
+
+   <div class="food-preview" data-target="food-1">
+      <img src="slike/hrana-img-2.png" alt="">
+      <h3>Domaćinski doručak</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+      </div>
+      <p>Domaći uštipci uz pečenicu, suvi vrat i
+      kulen sa mladim kozijim sirom i ajvarom.</p>
+      <div class="price">470</div>
+      <a href="#" class="btn">Naruči</a>
+   </div>
+
+   <div class="food-preview" data-target="food-2">
+      <img src="slike/hrana-img-3.png" alt="">
+      <h3>Hrskava piletina</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+      </div>
+      <p>u kornfleksu uz pikantnu rižu sa kukuruzom i crvenom paprikom uz sweet-chilly sos.</p>
+      <div class="price">845</div>
+      <a href="#" class="btn">Naruči</a>
+   </div>
+
+   <div class="food-preview" data-target="food-3">
+      <img src="slike/hrana-img-5.png" alt="">
+      <h3>Biftek na grilu</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+      </div>
+      <p>serviran na sa krompirićima i grilovanom povrću.</p>
+      <div class="price">1500</div>
+      <a href="#" class="btn">Naruči</a>
+   </div>
+
+</section>
+
+<!-- food preview section ends -->
+
+<!-- gallery section starts  -->
+
+<section class="gallery" id="gallery">
+
+   <div class="heading">
+      <span>Galerija</span>
+      <h3>Naša dela ostavljaju bez teksta</h3>
+   </div>
+
+   <div class="gallery-container">
+
+      <a href="slike/galerija2.jpg" class="box">
+         <img src="slike/galerija2.jpg" alt="">
+         <div class="icon"> <i class="fas fa-plus"></i> </div>
+      </a>
+
+      <a href="slike/galerija3.jpg" class="box">
+         <img src="slike/galerija3.jpg" alt="">
+         <div class="icon"> <i class="fas fa-plus"></i> </div>
+      </a>
+
+      <a href="slike/galerija4.jpg" class="box">
+         <img src="slike/galerija4.jpg" alt="">
+         <div class="icon"> <i class="fas fa-plus"></i> </div>
+      </a>
+
+      <a href="slike/galerija10.jpg" class="box">
+         <img src="slike/galerija10.jpg" alt="">
+         <div class="icon"> <i class="fas fa-plus"></i> </div>
+      </a>
+      
+      <a href="slike/galerija6.jpg" class="box">
+         <img src="slike/galerija6.jpg" alt="">
+         <div class="icon"> <i class="fas fa-plus"></i> </div>
+      </a>
+
+      <a href="slike/galerija7.jpg" class="box">
+         <img src="slike/galerija7.jpg" alt="">
+         <div class="icon"> <i class="fas fa-plus"></i> </div>
+      </a>
+      <a href="slike/galerija5.jpg" class="box">
+         <img src="slike/galerija5.jpg" alt="">
+         <div class="icon"> <i class="fas fa-plus"></i> </div>
+      </a>
+      <a href="slike/galerija9.jpg" class="box">
+         <img src="slike/galerija9.jpg" alt="">
+         <div class="icon"> <i class="fas fa-plus"></i> </div>
+      </a>
+      <a href="slike/galerija11.jpg" class="box">
+         <img src="slike/galerija11.jpg" alt="">
+         <div class="icon"> <i class="fas fa-plus"></i> </div>
+      </a>
+   </div>
+
+</section>
+
+<!-- gallery section ends -->
+
+<!-- menu section starts  -->
+
+<section class="menu" id="menu">
+
+   <div class="heading">
+      <span>Jelovnik</span>
+      <h3>Naši specijaliteti</h3>
+   </div>
+
+   <div class="swiper menu-slider">
+
+      <div class="swiper-wrapper">
+
+         <div class="swiper-slide slide">
+            <h3 class="title">doručak</h3>
+            <div class="box-container">
+               <div class="box">
+                  <div class="info">
+                     <h3>Domaćinski doručak</h3>
+                     <p>Domaći uštipci uz pečenicu, suvi vrat i
+                         kulen sa mladim kozijim sirom i ajvarom.</p>
+                  </div>
+                  <div class="price">470</div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Kranjski doručak</h3>
+                     <p>Kajgana od tri jajeta uz kranjsku kobasicu i slaninu,
+                      začinjene kriške krompira uz miks salatu od rukole i čerija i
+                     namaz od senfa.</p>
+                  </div>
+                  <div class="price">495</div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Rolovani fit omlet</h3>
+                     <p>Rol omlet od tri belanca i jednog žumanca na miksu
+                         zelenih salata uz piletinu, mladi sir,
+                         papriku, rendanu šargarepu,lan, susam.</p>
+                  </div>
+                  <div class="price">555</div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Komplet doručak</h3>
+                     <p>Kajgana od tri jajeta sa slaninom i kajmakom zapečena 
+                        u domaćoj lepinji uz paradajz.</p>
+                  </div>
+                  <div class="price">430</div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Doručak koji pokreće dan</h3>
+                     <p>Kajgana sa kajmakom, slaninom i prezilukom, 
+                        parmezanom uz svežu salatu od rukole i čerija.</p>
+                  </div>
+                  <div class="price">475</div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Doručak bakina tajna</h3>
+                     <p>Domaći uštipci posuti vanil šećerom uz 
+                        domaće pekmeze od šipka i kajsija.</p>
+                  </div>
+                  <div class="price">395</div>
+               </div>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <h3 class="title">ručak</h3>
+            <div class="box-container">
+               <div class="box">
+                  <div class="info">
+                     <h3>Hrskava piletina</h3>
+                     <p>u kornfleksu uz pikantnu rižu sa kukuruzom i crvenom paprikom uz sweet-chilly sos.</p>
+                  </div>
+                  <div class="price">845</div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Drapano prase u lepinji</h3>
+                     <p>hrskava slanina, BBQ sos, Coleslaw salata
+                        , dolar čips.</p>
+                  </div>
+                  <div class="price">1100</div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Biftek na grilu</h3>
+                     <p>serviran na sa krompirićima i grilovanom povrću.</p>
+                  </div>
+                  <div class="price">1500</div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Svinjski paketić sa slaninom</h3>
+                     <p>ajvarom i sirom uz domaći pečeni krompir sa ruzmarinom i kajmakom.</p>
+                  </div>
+                  <div class="price">1200</div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Mandorla ćuretina</h3>
+                     <p>sa bademom, senfom, prazilukom uz začinjeni krompir.</p>
+                  </div>
+                  <div class="price">1010</div>
+               </div>
+                <div class="box">
+                  <div class="info">
+                     <h3>Piletina sa gratiniranim njokama</h3>
+                     <p>prelivena krem sosom sa tikvicama i sušenim paradajzom.</p>
+                  </div>
+                  <div class="price">890</div>
+               </div>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <h3 class="title">Pasta & Pizza</h3>
+            <div class="box-container">
+               <div class="box">
+                  <div class="info">
+                     <h3>Pizza Trikolore</h3>
+                     <p>kečap, sir mocarela, pršuta, paradajz, rukola.</p>
+                  </div>
+                  <div class="price">970</div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Pasta Karborana</h3>
+                     <p>Taljatele sa pančetom u parmezan sosu.</p>
+                  </div>
+                  <div class="price">835</div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Pizaa Vojvođanka</h3>
+                     <p>sir, kečap, šunka, šampinjoni, kobasica, slanina.</p>
+                  </div>
+                  <div class="price">880</div>
+               </div>
+            <div class="box">
+               <div class="info">
+                  <h3>Pasta Bianko</h3>
+                  <p>Taljatele sa gamborima u sosu od vina sa paprikom, tikvicama i šargarepom.</p>
+               </div>
+               <div class="price">915</div>
+            </div>
+            <div class="box">
+               <div class="info">
+                  <h3>Pizza Kaprićoza </h3>
+                  <p>sir, kečap, šunka, šampinjoni.</p>
+               </div>
+               <div class="price">800</div>
+            </div>
+            <div class="box">
+               <div class="info">
+                  <h3>Pasta Verde</h3>
+                  <p>Fusili u pestu od spanaća i avokada aromatizovani belim lukom i limunovim sokom.</p>
+               </div>
+               <div class="price">950</div>
+            </div>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <h3 class="title">Dezert</h3>
+            <div class="box-container">
+               <div class="box">
+                  <div class="info">
+                     <h3>Sufle</h3>
+                     <p>Čokoladni topli desert uz sladoled od vanile i sos od šumskog voća.</p>
+                  </div>
+                  <div class="price">400</div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Palačinka</h3>
+                     <p>sa nutelom, plazmom, bananom i sladoledom.</p>
+                  </div>
+                  <div class="price">370</div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Bečki carski kolač</h3>
+                     <p>sa višnjama,kiselom pavlakom,cimet,korice od puter testa.</p>
+                  </div>
+                  <div class="price">420</div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Truffles</h3>
+                     <p>tri vrste čokolade,bademi,orasi.</p>
+                  </div>
+                  <div class="price">200</div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Šne nokle</h3>
+                     <p></p>
+                  </div>
+                  <div class="price">300</div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Voćne tortice</h3>
+                     <p>bela čokolada,bobičansto voće,slatki sir.</p>
+                  </div>
+                  <div class="price">360</div>
+               </div>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <h3 class="title">Piće</h3>
+            <div class="box-container">
+               <div class="box">
+                  <div class="info">
+                     <h3>Gazirani sokovi</h3>
+                     <p>Coca cola,Fanta,Sprite,Schweppes</p>
+                  </div>
+                  <div class="price">150</div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Negazirani sokovi</h3>
+                     <p>Jabuka,Breskva,Naranđža,Limun,Jagoda,Šumsko voće</p>
+                  </div>
+                  <div class="price">170</div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Apertiv</h3>
+                     <p>Rakija(šljiva,kajsija,dunja),pelinkovac,konjak,vinjak</p>
+                  </div>
+                  <div class="price">120-160</div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Kafa</h3>
+                     <p>Domaća,Espresso.Nescafe,Cappucino</p>
+                  </div>
+                  <div class="price">90-160</div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Voda</h3>
+                     <p>Obična,Gazirana,sa limunom</p>
+                  </div>
+                  <div class="price">120</div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Viski</h3>
+                     <p>Jack Daniels,Red Label,Stock</p>
+                  </div>
+                  <div class="price">300-350</div>
+               </div>
+            </div>
+         </div>
+
+      </div>
+
+      <div class="swiper-pagination"></div>
+
+   </div>
+
+</section>
+
+<!-- menu section ends -->
+
+<!-- order section starts  -->
+
+<section class="order" id="order">
+
+   <div class="heading">
+      <span>Naručite</span>
+      <h3>Brza kućna dostava</h3>
+   </div>
+
+   <form action="">
+      <div class="box-container">
+         <div class="box">
+            <div class="inputBox">
+               <span>Ime i prezime</span>
+               <input type="text" placeholder="Unesite vaše ime i prezime">
+            </div>
+            <div class="inputBox">
+               <span>Naziv jela</span>
+               <input type="text" placeholder="Koje jelo želite">
+            </div>
+            <div class="inputBox">
+               <span>Ostale napomene</span>
+               <input type="text" placeholder="Ako vam neki sastojci ne odgovaraju">
+            </div>
+            <div class="inputBox">
+               <span>Vaša adresa</span>
+               <textarea name="" placeholder="Unesite vašu adresu" id="" cols="30" rows="10"></textarea>
+            </div>
+         </div>
+         <div class="box">
+            <div class="inputBox">
+               <span>Broj telefona</span>
+               <input type="number" placeholder="Unesite vaš broj telefona">
+            </div>
+            <div class="inputBox">
+               <span>Količina</span>
+               <input type="number" placeholder="Koliko porcija želite">
+            </div>
+            <div class="inputBox">
+               <span>Vreme u koje želite da vam hrana bude dostavljena</span>
+               <input type="datetime-local">
+            </div>
+            <div class="inputBox">
+               <span>Naša lokacija</span>
+               <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2801.8557373489352!2d19.22757351482922!3d45.392080846275064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475c9c4ba210bcef%3A0xc8d7adfc8ba379ca!2zVHJnIERyIFpvcmFuYSDEkGluxJFpxIdhLCBCYcSN!5e0!3m2!1ssr!2srs!4v1657014706616!5m2!1ssr!2srs"
+                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+         </div>
+      </div>
+      <input type="reset" value="Naručite" class="btn" onclick="Naruceno()">
+   </form>
+   
+</section>
+
+<!-- order section ends -->
+
+<!-- blogs section starts  -->
+
+<section class="blogs" id="blogs">
+
+   <div class="heading">
+      <span>Blogovi</span>
+      <h3>Poslednje objave</h3>
+   </div>
+
+   <div class="swiper blogs-slider">
+
+      <div class="swiper-wrapper">
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="slike/blog-img-1.jpg" alt="">
+               <span>Burgeri</span>
+            </div>
+            <div class="content">
+               <div class="icon">
+                  <a href="#"> <i class="fas fa-calendar"></i> 24 decembar, 2021 </a>
+                  <a href="#"> <i class="fas fa-user"></i> by admin </a>
+               </div>
+               <a href="#" class="title">Burgeri koji obaraju sa nogu</a>
+               <p>Odličan kvalitet mesa,kao i zemički su idealna formula za odličan burger...</p>
+               <a href="#" class="btn">read more</a>
+            </div>
+         </div>
+
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="slike/blog-img-3.jpg" alt="">
+               <span>Piletina</span>
+            </div>
+            <div class="content">
+               <div class="icon">
+                  <a href="#"> <i class="fas fa-calendar"></i> 22 februar, 2022 </a>
+                  <a href="#"> <i class="fas fa-user"></i>Nikola</a>
+               </div>
+               <a href="#" class="title">Hrskavo piletina na više načina</a>
+               <p>Otkrijte tajna i sastojke za idealnu hrskavu piletinu...</p>
+               <a href="#" class="btn">read more</a>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="slike/blog-img-5.jpg" alt="">
+               <span>Pizza</span>
+            </div>
+            <div class="content">
+               <div class="icon">
+                  <a href="#"> <i class="fas fa-calendar"></i> 2 april, 2022 </a>
+                  <a href="#"> <i class="fas fa-user"></i>Nikola</a>
+               </div>
+               <a href="#" class="title">Pravo testo za Pizzu?</a>
+               <p>Kako napraviti idealno testo za pizzu kao što je u našem restoranu pročitajte...</p>
+               <a href="#" class="btn">read more</a>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="slike/blog-img-6.jpg" alt="">
+               <span>Kafa</span>
+            </div>
+            <div class="content">
+               <div class="icon">
+                  <a href="#"> <i class="fas fa-calendar"></i> 29 april, 2022 </a>
+                  <a href="#"> <i class="fas fa-user"></i>Nikola</a>
+               </div>
+               <a href="#" class="title">U ponudi više vrsta kafe</a>
+               <p>Prateći današnje trendove u ponudu smo uveli više različitih zrna kafe...</p>
+               <a href="#" class="btn">read more</a>
+            </div>
+         </div>
+
+      </div>
+
+      <div class="swiper-pagination"></div>
+
+   </div>
+
+</section>
+
+<!-- blogs section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+   <div class="icons-container">
+
+      <div class="icons">
+         <i class="fas fa-clock"></i>
+         <h3>Radno vreme</h3>
+         <p>07:00h-22:00h</p>
+      </div>
+
+      <div class="icons">
+         <i class="fas fa-phone"></i>
+         <h3>Kontakt brojevi</h3>
+         <p>+381 774-234</p>
+         <p>+381 774-666</p>
+      </div>
+
+      <div class="icons">
+         <i class="fas fa-envelope"></i>
+         <h3>E-mail</h3>
+         <p>oljacanikola93@gmail.com</p>
+         <p>restoranoljacabac@gmail.com</p>
+      </div>
+
+      <div class="icons">
+         <i class="fas fa-map"></i>
+         <h3>Adresa</h3>
+         <p> Trg dr Zorana Đinđića ,Bač-21420</p>
+      </div>
+
+   </div>
+
+   <div class="share">
+      <a href="https://www.facebook.com" class="fab fa-facebook-f" target="_blank"></a>
+      <a href="https://www.twitter.com" class="fab fa-twitter" target="_blank"></a>
+      <a href="https://www.instagram.com" class="fab fa-instagram" target="_blank"></a>
+      <a href="https://www.linkedin.com" class="fab fa-linkedin" target="_blank"></a>
+   </div>
+
+   <div class="credit"><span>Nikola Oljača</span>|Copyright 2022</div>
+
+</section>
+
+<!-- footer section ends  -->
+
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+<script>
+   lightGallery(document.querySelector('.gallery .gallery-container'));
+</script>
+
+</body>
+</html>
