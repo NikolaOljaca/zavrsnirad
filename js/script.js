@@ -124,3 +124,4 @@ function checkTime(i) {
 }
 
 
+   lightGallery(document.querySelector('.gallery .gallery-container'));
