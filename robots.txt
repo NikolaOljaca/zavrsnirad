@@ -1,5 +1,6 @@
+Sitemap:https: //nikolaoljaca.github.io/zavrsnirad/sitemap.xml
 User-agent: *
 Disallow: /js
 Disallow: /css
 Allow:slike/restoran.jpg
-Allow:sitemap.xml
+
