@@ -101,7 +101,7 @@ var swiper = new Swiper(".blogs-slider", {
    },
 });
 
-function Naruceno()
+function order()
 {
    alert ("Vaša poruđžbina je pristigla,uskoro nas očekujte.");
 }
