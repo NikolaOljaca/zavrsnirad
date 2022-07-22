@@ -114,6 +114,18 @@ function startTime() {
     s=checkTime(s);
     document.getElementById("clock").innerHTML=h+"-"+m+"-"+s;
     var t=setTimeout("startTime()",500);
+   if(h > 22 & h < 7)
+    {
+      let clock=document.getElementById("clock");
+      clock.style.color='red';
+      clock.style.borderBlockColor='red';
+    }
+    else
+    {
+      let clock=document.getElementById("clock");
+      clock.style.color='green';
+      clock.style.borderBlockColor='green';
+    }
 }
 function checkTime(i) {
     if(i<10)
